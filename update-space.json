@@ -1,0 +1,14 @@
+{
+    "spaceConfigId": "{{spaceConfig}}",
+    "environmentId": "{{envId}}",
+    "primaryWorkbookId": "{{dgwWorkbookId}}",
+    "name": "Eric's Space Updated",
+    "displayOrder": 1,
+    "sidebarConfigs": [
+        {
+            "type": "link",
+            "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "title": "Important Info"
+        }
+    ]
+}

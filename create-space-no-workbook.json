@@ -1,0 +1,13 @@
+{
+    "spaceConfigId": "us_sc_uj691wck",
+    "environmentId": "us_env_hVXkXs0b",
+    "primaryWorkbookId": "us_wb_qGZbKwDW",
+    "name": "My Space",
+    "displayOrder": 1,
+    "sidebarConfigs": [
+        {
+            "type": "workbook",
+            "workbookId": "us_wb_qGZbKwDW"
+        }
+    ]
+}

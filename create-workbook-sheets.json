@@ -1,0 +1,94 @@
+{
+    "name": "Data Gathering Workbook",
+    "spaceId": "{{firstSpace}}",
+    "sheets": [
+        {
+            "name": "Leads",
+            "fields": [
+                {
+                    "key": "name",
+                    "type": "string",
+                    "label": "Full Name",
+                    "description": "The full name of the customer",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                },
+                {
+                    "key": "email",
+                    "type": "string",
+                    "label": "Email Address",
+                    "description": "The email address of the customer",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                },
+                {
+                    "key": "phone",
+                    "type": "string",
+                    "label": "Phone number",
+                    "description": "Lead contact number"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "label": "Lead Status",
+                    "description": "The status of the lead",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Accounts",
+            "fields": [
+                {
+                    "key": "name",
+                    "type": "string",
+                    "label": "Account Name",
+                    "description": "The full name of the customer account",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                },
+                {
+                    "key": "email",
+                    "type": "string",
+                    "label": "Email Address",
+                    "description": "The primary contact on the account",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "label": "Account Status",
+                    "description": "The status of the lead",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                },
+                {
+                    "key": "source",
+                    "type": "string",
+                    "label": "Lead Source",
+                    "description": "The lead that this Account was converted from"
+                }
+            ]
+        }
+    ]
+}
