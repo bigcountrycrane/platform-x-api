@@ -1,0 +1,127 @@
+{
+    "name": "Validation Workbook - only strings",
+    "spaceId": "{{spaceId}}",
+    "sheets": [
+        {
+            "name": "Providers",
+            "fields": [
+                {
+                    "key": "First_Name__c",
+                    "type": "string",
+                    "label": "Provider First Name",
+                    "description": "The first name of the provider",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                },
+                {
+                    "key": "Last_Name__c",
+                    "type": "string",
+                    "label": "Provider Last Name",
+                    "description": "The last name of the provider",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                },
+                {
+                    "key": "Phone_Number__c",
+                    "type": "string",
+                    "label": "Provider Phone number",
+                    "description": "Provider contact number"
+                },
+                {
+                    "key": "Collaborative_Provider__c",
+                    "type": "boolean",
+                    "label": "Collaborative Provider",
+                    "description": "Is the provider a collaborative provider?"
+                },
+                {
+                    "key": "Group__c",
+                    "type": "string",
+                    "label": "Provider Group",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Charts",
+            "fields": [
+                {
+                    "key": "Member_First_Name__c",
+                    "type": "string",
+                    "label": "Provider First Name",
+                    "description": "The first name of the member",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                },
+                {
+                    "key": "Member_Last_Name__c",
+                    "type": "string",
+                    "label": "Provider Last Name",
+                    "description": "The last name of the member",
+                    "constraints": [
+                        {
+                            "type": "required"
+                        }
+                    ]
+                },
+                {
+                    "key": "Member_Gender__c",
+                    "type": "enum",
+                    "label": "Member Gender",
+                    "description": "The gender of the member",
+                    "is_array": true,
+                    "config": [
+                        {"allow_custom": true},
+                        {"options": [
+                            {"value": "male",
+                             "label": "Male"
+                            },
+                            {"value": "female",
+                            "label": "Female"
+                            },
+                            {"value": "non-binary",
+                            "label": "Non-binary"
+                            },
+                            {"value": "unknown",
+                            "label": "Not provided"
+                            }
+                          ]
+                        }
+
+                    ]
+                },
+                {
+                    "key": "Member_DOB__c",
+                    "type": "date",
+                    "label": "Member DOB",
+                    "description": "The member's date of birth"
+                },
+                {
+                    "key": "MCC_Priority_Score__c",
+                    "type": "numeric",
+                    "label": "MCC Priority Score",
+                    "config":[
+                        {"decimal_places": 1}
+                    ]
+                },
+                {
+                    "key": "Provider_Group_Name__c",
+                    "type": "string",
+                    "label": "Provider Group Name"
+                }
+            ]
+        }
+    ]
+}
